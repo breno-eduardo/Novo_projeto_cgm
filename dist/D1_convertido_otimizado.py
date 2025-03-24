@@ -13,7 +13,7 @@ safe_float = lambda x: float(x) if x not in [None, ""] else 0
 def match_value_df(df, col, target):
     matches = df[df[col] == target]
     return matches.index[0] if not matches.empty else None
-
+#-------
 # Função para registrar warnings (equivalente ao carregaWarnings do VBA)
 def register_warning(warnings_list, item_line, msg):
     if msg:
